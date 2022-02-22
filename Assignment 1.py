@@ -49,7 +49,7 @@ for i in range(len(dates)):
     for bond in bonds:
         bond_ytm = [bond.bond_ytm(price=bond.ten_day_price[i])]
         ytm_dict[dates[i]].append(bond_ytm)
-x_label = ['22/2', '22/8', '23/2', '23/8', '24/3', '24/9', '25/3', '25/9', '26/3', '26/9']
+x_label = [ '22/8', '23/2', '23/8', '24/3', '24/9', '25/3', '25/9', '26/3', '26/9', '27/3']
 plt.figure(figsize=(10, 6))
 plt.xlabel('time to maturity')
 plt.ylabel('ytm')
